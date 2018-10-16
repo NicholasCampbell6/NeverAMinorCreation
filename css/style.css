@@ -1,8 +1,9 @@
 /* Background colorsA*/
 
 html {
-  height: 100%;
+  length: auto 100%;
   background: linear-gradient(to bottom, #b3b3ff 0%, #66ffff 100%);
+  background-repeat: no-repeat;
 }
 
 
@@ -46,7 +47,7 @@ a {
 */
 
 .button {
-  box-shadow: 5px 5px 10px #ff3333;
+  box-shadow: 2px 2px 5px #666666;
   border-radius: 20px;
   background-color: #ff3333;
   text-align: center;
@@ -71,7 +72,7 @@ a {
 
 footer {
   display: flex;
-  text-align: right;
+  text-align: center;
   background-color: #ff9999;
   border: 1px solid black;
   border-radius: 10em;
@@ -123,10 +124,6 @@ th {
   background-color: #bfbfbf;
 }
 
-
-
-
-
 h2 {
   font-family: "Noto Serif";
 }
@@ -170,7 +167,19 @@ img {
   margin: auto;
 }
 
+#more {
+  display: none;
+}
 
+.description p,
+.description ul {
+  line-height: 1em;
+  font-size: .8em;
+}
+
+.itemName {
+  font-size: 1.2em;
+}
 /* Homepage */
 
 .grid {
