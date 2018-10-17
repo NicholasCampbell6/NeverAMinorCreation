@@ -7,21 +7,21 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
   <script type="text/javascript" src="./js/scripts.js"></script>
 </head>
-<body>
+<body onload = "showDivs(slideIndex)">
   <div class="container">
     <p class = "cart">Your Cart</p>
     <header class ="row">
-      <a href = "./index.html"><img class ="col-md-2 logo" src = "./images/logo.png"></img></a>
+      <a href = "./index.html"><img class ="logo" src = "./images/logo.png"></img></a>
       <nav>
         <a href = "./premade.html"><button class="button">Premade Bags</button></a>
         <a href = "./buildabag.html"><button class = "button">Build-A-Bag</button></a>
         <a href = "./wholesale.html"><button class = "button">Wholesale Bags</button></a>
         <a href = "./contact.html"><button class = "button">Contacts</button></a>
         <a href = "./shipping.html"><button class = "button">Shipping</button></a>
-
-
       </nav>
     </header>
+
+
     <div class = "grid">
       <div class = "item">
         <h3>Premade Bags</h3>
@@ -33,6 +33,34 @@
         <h3>Wholesale Bags</h3>
       </div>
     </div>
+
+    <div class ="slideGroup">
+       <button class = "w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+       <div class="slides">
+         <div class = "heading">This is a placeholder1</div>
+       </div>
+       <div class="slides">
+         <div class = "heading">This is a placeholder2</div>
+       </div>
+       <div class="slides">
+         <div class = "heading">This is a placeholder3</div>
+       </div>
+       <button class = "w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+     </div>
+     <div class = "slideGroup">
+       <button class = "w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+       <div class="slides">
+         <div class = "heading">This is a placeholder4</div>
+       </div>
+       <div class="slides">
+         <div class = "heading">This is a placeholder5</div>
+       </div>
+       <div class="slides">
+         <div class = "heading">This is a placeholder6</div>
+       </div>
+       <button class = "w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+     </div>
+
   </div>
   <footer>
     <h4><a href="./premade.html">Premade Bags</a></h4>
