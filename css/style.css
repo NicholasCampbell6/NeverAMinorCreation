@@ -30,21 +30,20 @@ header nav p {
 a {
   text-decoration: none;
 }
-/*
+
 .cart {
   text-align: right;
-  display: flex;
-  opacity: .5;
-  background-color: white;
+  display: inline-flex;
+
 }
 
 .cart img {
   display: inline-block;
   opacity: .5;
   width: 2em;
-  height: auto;
+  height: 2em;
 }
-*/
+
 
 .button {
   box-shadow: 2px 2px 5px #666666;
