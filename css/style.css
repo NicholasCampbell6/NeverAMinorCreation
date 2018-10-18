@@ -138,7 +138,7 @@ h2 {
 }
 
 .sub {
-  margin: 0;
+  margin: auto;
   background-color: white;
   padding-left: .5em;
 }
@@ -177,6 +177,11 @@ img {
   font-size: .8em;
 }
 
+.item {
+    border: 1px solid black;
+    padding: 1em;
+}
+
 .itemName {
   font-size: 1.2em;
 }
@@ -193,14 +198,14 @@ img {
   border-radius: 20px;
 }
 
-.item {
+.cell {
   background-color: beige;
   box-shadow: 0px 0px 2px black;
   border: 1px solid black;
   text-align: center;
 }
 
-.w3-button {
+.gallery-button {
   border: none;
   display: inline-block;
   padding: 8px 16px;
@@ -214,21 +219,20 @@ img {
   white-space: nowrap;
 }
 
-.w3-display-right {
+.gallery-button:hover {
+  background-color: grey;
+}
+
+.display-right {
   position: static;
   top: 50%;
   right: 0%;
-  /*transform: translate(0%,-50%);
-  -ms-transform: translate(0%,-50%);*/
 }
 
-.w3-display-left {
+.display-left {
   position: static;
   top: 50%;
   left: 0%;
-  /*
-  transform: translate(0%,-50%);
-  -ms-transform: translate(0%,-50%);*/
 }
 
 .slideGroup {
