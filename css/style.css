@@ -166,10 +166,6 @@ img {
   margin: auto;
 }
 
-#more {
-  display: none;
-}
-
 .description p,
 .description ul {
   line-height: 1em;
@@ -179,10 +175,29 @@ img {
 .item {
     border: 1px solid black;
     padding: 1em;
+    display: flex;
+    width: 96.5%;
 }
 
 .itemName {
   font-size: 1.2em;
+  display: block;
+}
+
+.item img {
+  display: inline-block;
+  margin: 0;
+  height: 100%;
+  width: auto;
+}
+
+.item h4 {
+  display: inline;
+}
+
+.description ul {
+  display: block;
+  margin: auto;
 }
 /* Homepage */
 
