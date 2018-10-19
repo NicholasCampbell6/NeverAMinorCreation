@@ -34,14 +34,16 @@ a {
 .cart {
   text-align: right;
   display: inline-flex;
+  opacity: .7;
 
 }
 
 .cart img {
   display: inline-block;
   opacity: .5;
-  width: 2em;
-  height: 2em;
+  width: auto;
+  height: 5em;
+  float: right;
 }
 
 
