@@ -1,11 +1,10 @@
-/* Background colorsA*/
+/* Background colors*/
 
 html {
   length: auto 100%;
   background: linear-gradient(to bottom, #b3b3ff 0%, #66ffff 100%);
   background-repeat: no-repeat;
 }
-
 
 /*NavBar*/
 
@@ -168,39 +167,6 @@ img {
   margin: auto;
 }
 
-.description p,
-.description ul {
-  line-height: 1em;
-  font-size: .8em;
-}
-
-.item {
-    border: 1px solid black;
-    padding: 1em;
-    display: flex;
-    width: 96.5%;
-}
-
-.itemName {
-  font-size: 1.2em;
-  display: block;
-}
-
-.item img {
-  display: inline-block;
-  margin: 0;
-  height: 100%;
-  width: auto;
-}
-
-.item h4 {
-  display: inline;
-}
-
-.description ul {
-  display: block;
-  margin: auto;
-}
 /* Homepage */
 
 .grid {
@@ -256,12 +222,64 @@ img {
   width: auto;
   height: auto;
   background-color: white;
+  margin: 1em auto;
 }
 
 .slides {
   text-align: center;
-  width: 24em;
+  width: 29%;
   margin: auto;
   display: inline-block;
   font-family: "Noto Serif";
 }
+
+/*Premade Bags and Wholesale Bags*/
+
+.description p,
+.description ul {
+  line-height: 1em;
+  font-size: .8em;
+}
+
+.item {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    width: 96.5%;
+    border-radius: 4em;
+}
+
+.itemName {
+  font-size: 1.2em;
+  display: inline-block;
+  position: relative;
+  bottom: 5em;
+
+}
+
+.itemPrice {
+  font-size: 1em;
+  display: inline-block;
+  position: relative;
+  right: 10.5em;
+  bottom: 4em;
+}
+
+.description {
+  display: inline-block;
+  position: absolute;
+}
+
+.item img {
+  display: inline-block;
+  margin: 0;
+  height: 100%;
+  width: auto;
+  border-radius: 1em;
+}
+
+.description ul {
+  display: block;
+  margin: auto;
+}
+
+/*Build a Bag*/
