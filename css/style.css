@@ -1,9 +1,8 @@
 /* Background colors*/
 
 html {
-  length: auto 100%;
+  length: auto;
   background: linear-gradient(to bottom, #b3b3ff 0%, #66ffff 100%);
-  background-repeat: no-repeat;
 }
 
 /*NavBar*/

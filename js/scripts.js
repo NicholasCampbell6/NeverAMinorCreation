@@ -31,3 +31,16 @@ function showDivs(n) {
     }
     slides[slideIndex-1].style.display = "block";
 }
+
+let bag = [];
+let ribbon = [];
+let items = [];
+
+class item {
+  constructor(name, price) {
+    this.name = name;
+    this.price = price;
+  }
+}
+
+const birthdayPartyBag = new item("Birthday Party Bag", "$0.15");
