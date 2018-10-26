@@ -281,12 +281,33 @@ img {
   margin: auto;
 }
 
+.addToCart {
+  border: 1px solid darkred;
+  border-radius: 1em;
+  background: linear-gradient(to bottom, #ff9999 0%, #ff3333 100%);
+  width: 8em;
+  height: auto;
+  padding: 1em;
+  font-weight: bold;
+  color: white;
+  font-family: "Montserrat";
+  text-align: center;
+  position: relative;
+  left: 60em;
+  bottom: 5em;
+}
+
 /*Build a Bag*/
 
 #buildabagLayout {
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: 2fr 1fr 2fr;
+}
+
+.instructions {
+  display: block;
+  height: 1em;
 }
 
 .priceTracker {
@@ -298,6 +319,19 @@ img {
   padding: .1em;
   box-shadow: 1px 1px 4px black;
   grid-row-start: 1;
-  grid-row-end: 4;
+
   grid-column: 2;
+}
+
+.itemGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.itemGrid h4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+
 }
