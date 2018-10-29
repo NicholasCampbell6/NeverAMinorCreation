@@ -38,9 +38,9 @@ function showDivs(n) {
 
 // Arrays for build a bag
 
-let bag = [];
-let ribbon = [];
-let items = [];
+let bagChoice = [];
+let ribbonChoice = [];
+let itemsChoice = [];
 
 //Constructor for items
 
@@ -51,6 +51,32 @@ class item {
   }
 }
 
+//Functions for Build a Bag
+
+let addBag = function (n) {
+  bagChoice.push(n.price);
+  if (bagChoice.length > 1) {
+    bagChoice.shift();
+  }
+}
+
+let addRibbon = function (n) {
+  ribbonChoice.push(n.price)
+  if (ribbonChoice.length > 1) {
+    ribbonChoice.shift();
+  }
+}
+
+let addItems = function (n) {
+  itemsChoice.push(n.price)
+}
+
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+let bagTotal = function () {
+  total = bagChoice.reduce(reducer) + ribbonChoice.reduce(reducer) + itemsChoice.reduce(reducer);
+  return total;
+}
 
 //Bag Designs
 
@@ -65,7 +91,7 @@ const halloweenAssortment = new item("Halloween assortment", 0.15);
 const neonNetBackpackLarge = new item("Neon Net Backpack Large", 1.50);
 const retroBag = new item("Retro Bag", 0.15);
 const sportsBag = new item("Sports Bag", 0.15);
-const sportsDrawstringBagLarge = new item("Sports Drawstring Bag Large", );
+const sportsDrawstringBagLarge = new item("Sports Drawstring Bag Large", 1.50);
 const starsBag = new item("Stars Bag", 0.15);
 
 
@@ -78,9 +104,10 @@ const redRibbon = new item("Red Ribbon", 0.50);
 const yellowRibbon = new item("Yellow Ribbon", 0.50);
 
 //Items
+
+const candy10pieces = new item("10 Pieces of Candy", 0.95);
+const carBalloonRacer = new item("Car Balloon Racer", 0.75);
 /*
-const x = new item("", );
-const x = new item("", );
 const x = new item("", );
 const x = new item("", );
 const x = new item("", );
