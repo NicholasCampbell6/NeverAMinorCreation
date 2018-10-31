@@ -33,15 +33,19 @@ a {
   text-align: right;
   display: inline-flex;
   opacity: .7;
+  height: 1em;
+  width: auto;
+  position: relative;
 
 }
 
 .cart img {
-  display: inline-block;
-  opacity: .5;
+  display: inline-flex;
   width: auto;
-  height: 5em;
+  height: 1em;
+  width: auto;
   float: right;
+  text-align: right;
 }
 
 
@@ -231,6 +235,10 @@ img {
   display: inline-block;
   font-family: "Noto Serif";
 }
+<<<<<<< HEAD
+.container .cart {
+
+=======
 
 /*Premade Bags and Wholesale Bags*/
 
@@ -311,6 +319,7 @@ img {
 }
 
 .priceTracker {
+  margin-top: 1em;
   width: 95%;
   height: 20em;
   background-color: #ebebe0;
@@ -319,8 +328,9 @@ img {
   padding: .1em;
   box-shadow: 1px 1px 4px black;
   grid-row-start: 1;
-
   grid-column: 2;
+  position: sticky;
+  top: 1em;
 }
 
 .itemGrid {
@@ -342,12 +352,25 @@ img {
 .BABItem h5 {
   margin: 0 auto;
 }
-
 .BABItem img {
   height: 8em;
   width: auto;
 }
 
 .addToBag {
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> 0b5fcdb768d81f6f5b2d2d8d8b2392c13d82b824
+>>>>>>> a146360f72a7f11ed17ed3933005bdd169b07901
+=======
+
+>>>>>>> 0b5fcdb768d81f6f5b2d2d8d8b2392c13d82b824
+}
+div.container{
+position: relative;
+right: 40px;
+>>>>>>> 94ac1984bc9b53a328d0ac37b51726e583cd180e
 }
