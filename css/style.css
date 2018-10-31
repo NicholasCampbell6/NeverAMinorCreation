@@ -37,15 +37,17 @@ a {
   opacity: .7;
   height: 1em;
   width: auto;
+  position: relative;
 
 }
 
 .cart img {
-  display: inline-block;
+  display: inline-flex;
   width: auto;
   height: 1em;
   width: auto;
   float: right;
+  text-align: right;
 }
 
 
@@ -266,4 +268,7 @@ img {
   margin: auto;
   display: inline-block;
   font-family: "Noto Serif";
+}
+.container .cart {
+
 }
