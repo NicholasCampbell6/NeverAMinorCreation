@@ -18,7 +18,7 @@ function readMore(x, y, z) {
 
 //Slide Show
 
-let slideIndex = 1;
+var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n){
