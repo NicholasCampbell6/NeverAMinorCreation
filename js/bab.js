@@ -68,7 +68,6 @@ function addBag(n) {
   if (ribbonChoice.length > 1) {
     ribbonChoice.shift();
   }
-  console.log(ribbonChoice);
 }
 
  function addItems(n) {
