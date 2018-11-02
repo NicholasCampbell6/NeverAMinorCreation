@@ -54,29 +54,22 @@ var x = new item("", );
 var x = new item("", );
 */
 
+var empty = new item("nothing", 0);
+
 //Functions for Build a Bag
 
-function addBag(n) {
-  bagChoice.push(n);
-  if (bagChoice.length > 1) {
-    bagChoice.shift();
-  }
-}
 
- function addRibbon(n) {
-  ribbonChoice.push(n)
-  if (ribbonChoice.length > 1) {
-    ribbonChoice.shift();
-  }
-}
-
- function addItems(n) {
-  itemsChoice.push(n)
-}
-
-var reducer = (accumulator, currentValue) => accumulator + currentValue;
 
 function bagTotal() {
+  if (bagChoice.length === 0){
+    bagChoice.push(empty);
+  }
+  if (ribbonChoice.length === 0){
+    ribbonChoice.push(empty);
+  }
+  if (itemsChoice.length === 0){
+    itemsChoice.push(empty);
+  }
   var bagChoiceTotal = bagChoice[0].price;
   var ribbonChoiceTotal = ribbonChoice[0].price;
   function itemsChoiceTotal() {
@@ -87,4 +80,38 @@ function bagTotal() {
     }
   };
   total = bagChoiceTotal + ribbonChoiceTotal + itemsChoiceTotal();
+  var totalPrice = document.getElementById("totalPrice");
+  totalPrice.innerHTML = "$" + total.toFixed(2);
 }
+
+
+
+function addBag(n) {
+  bagChoice.push(n);
+  if (bagChoice.length > 1) {
+    bagChoice.shift();
+  }
+  var showBag = document.getElementById("bagChoice");
+  showBag.innerHTML = n.name + " - $" + n.price.toFixed(2);
+  bagTotal();
+}
+
+ function addRibbon(n) {
+  ribbonChoice.push(n)
+  if (ribbonChoice.length > 1) {
+    ribbonChoice.shift();
+  }
+  var showRibbon = document.getElementById("ribbonChoice");
+  showRibbon.innerHTML = n.name + " - $" + n.price.toFixed(2);
+  bagTotal();
+}
+
+ function addItems(n) {
+  itemsChoice.push(n)
+
+  var showItems = document.getElementById("itemsChoice");
+  showItems.innerHTML = n.name + " - $" + n.price;
+  bagTotal();
+}
+
+var reducer = (accumulator, currentValue) => accumulator + currentValue;

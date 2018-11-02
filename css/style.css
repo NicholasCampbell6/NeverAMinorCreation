@@ -306,7 +306,7 @@ img {
 #buildabagLayout {
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-template-rows: 2fr 1fr 2fr;
+  grid-template-rows: 20em 10fr 20fr;
 }
 
 .instructions {
@@ -314,19 +314,27 @@ img {
   height: 1em;
 }
 
+#priceTrackerCell {
+  grid-row-start: 1;
+  grid-row-end: 5;
+  grid-column: 2;
+}
+
 .priceTracker {
   margin-top: 1em;
   width: 95%;
-  height: 20em;
+  height: auto;
   background-color: #ebebe0;
   border-left: 1px solid black;
   border-radius: 1em;
   padding: .1em;
   box-shadow: 1px 1px 4px black;
-  grid-row-start: 1;
-  grid-column: 2;
   position: sticky;
   top: 1em;
+}
+
+.priceTracker h5 {
+  margin-left: 1.3em;
 }
 
 .itemGrid {
