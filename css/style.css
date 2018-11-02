@@ -36,7 +36,17 @@ a {
   height: 1em;
   width: auto;
   position: relative;
-
+  right: auto;
+  position: relative;
+  left: 1300px;
+  box-shadow: 2px 2px 5px #666666;
+  border-radius: 20px;
+  background-color: #ff3333;
+  text-align: center;
+  padding: 20px 20px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
 }
 
 .cart img {
@@ -46,6 +56,10 @@ a {
   width: auto;
   float: right;
   text-align: right;
+  position: relative;
+  right: auto;
+  background-color: black;
+
 }
 
 
@@ -362,4 +376,8 @@ img {
 }
 
 .addToBag {
+}
+
+button.login{
+
 }
