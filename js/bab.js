@@ -58,7 +58,9 @@ var empty = new item("nothing", 0);
 
 //Functions for Build a Bag
 
-
+function getSum(total, num) {
+  return total + num;
+}
 
 function bagTotal() {
   if (bagChoice.length === 0){
@@ -72,14 +74,14 @@ function bagTotal() {
   }
   var bagChoiceTotal = bagChoice[0].price;
   var ribbonChoiceTotal = ribbonChoice[0].price;
+  var prices = [];
   function itemsChoiceTotal() {
     for (i = 0; i<itemsChoice.length; i++) {
-      var prices = [];
       prices.push(itemsChoice[i].price);
-      return prices.reduce(reducer);
     }
-  };
-  total = bagChoiceTotal + ribbonChoiceTotal + itemsChoiceTotal();
+  }
+  itemsChoiceTotal();
+  total = bagChoiceTotal + ribbonChoiceTotal + prices.reduce(getSum);
   var totalPrice = document.getElementById("totalPrice");
   totalPrice.innerHTML = "$" + total.toFixed(2);
 }
@@ -113,5 +115,3 @@ function addBag(n) {
   showItems.innerHTML = n.name + " - $" + n.price;
   bagTotal();
 }
-
-var reducer = (accumulator, currentValue) => accumulator + currentValue;

@@ -66,7 +66,7 @@ a {
 .button {
   box-shadow: 2px 2px 5px #666666;
   border-radius: 20px;
-  background-color: #ff3333;
+  background: linear-gradient(to bottom, #ff9999 0%, #ff3333 100%);
   text-align: center;
   padding: 20px 20px;
   font-family: "Montserrat";
