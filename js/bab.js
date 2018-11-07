@@ -41,18 +41,19 @@ var yellowRibbon = new item("Yellow Ribbon", 0.50);
 
 var candy10pieces = new item("10 Pieces of Candy", 0.95);
 var carBalloonRacer = new item("Car Balloon Racer", 0.75);
-/*
-var x = new item("", );
-var x = new item("", );
-var x = new item("", );
-var x = new item("", );
-var x = new item("", );
-var x = new item("", );
-var x = new item("", );
-var x = new item("", );
-var x = new item("", );
-var x = new item("", );
-*/
+var cupAndBall = new item("Cup & Ball Game", .4);
+var fingerBeams = new item("Finger Beams", .55);
+var lipWhistle = new item("Lip Whistle", .45);
+var miniBasketballGame = new item("Mini BasketBall Game", .4);
+var miniFlyingSaucer = new item("Mini Flying Saucer", .35);
+var neonChalkBoard = new item("Neon Chalk Board", .7);
+var triangleGame = new item("Triangle Game", 1.7);
+var beachBall = new item("Beach Ball", 1.5);
+var airHead = new item("1 Air Head", .25);
+var armyMen = new item("4 Army Men", .35);
+var crayons = new item("Crayons", .35);
+var gidBounceBall = new item("Glow in the Dark Bound Ball", .25);
+var metalSlapBand = new item("Metal Slap Band", .6);
 
 var empty = new item("nothing", 0);
 
@@ -60,6 +61,40 @@ var empty = new item("nothing", 0);
 
 function getSum(total, num) {
   return total + num;
+}
+
+function addBag(n) {
+  bagChoice.push(n);
+  if (bagChoice.length > 1) {
+    bagChoice.shift();
+  }
+  var showBag = document.getElementById("bagChoice");
+  showBag.innerHTML = n.name + " - $" + n.price.toFixed(2);
+  bagTotal();
+}
+
+ function addRibbon(n) {
+  ribbonChoice.push(n)
+  if (ribbonChoice.length > 1) {
+    ribbonChoice.shift();
+  }
+  var showRibbon = document.getElementById("ribbonChoice");
+  showRibbon.innerHTML = n.name + " - $" + n.price.toFixed(2);
+  bagTotal();
+}
+
+ function addItems(n) {
+   for (i = 0; i < itemsChoice.length; i++) {
+     if (itemsChoice[i] === n) {
+       itemsChoice.splice(i, 1);
+     }
+   }
+   itemsChoice.push(n);
+
+   var showItems = document.getElementById("itemsChoice");
+   showItems.innerHTML = n.name + " - $" + n.price;
+   bagTotal();
+   console.log(itemsChoice);
 }
 
 function bagTotal() {
@@ -84,34 +119,4 @@ function bagTotal() {
   total = bagChoiceTotal + ribbonChoiceTotal + prices.reduce(getSum);
   var totalPrice = document.getElementById("totalPrice");
   totalPrice.innerHTML = "$" + total.toFixed(2);
-}
-
-
-
-function addBag(n) {
-  bagChoice.push(n);
-  if (bagChoice.length > 1) {
-    bagChoice.shift();
-  }
-  var showBag = document.getElementById("bagChoice");
-  showBag.innerHTML = n.name + " - $" + n.price.toFixed(2);
-  bagTotal();
-}
-
- function addRibbon(n) {
-  ribbonChoice.push(n)
-  if (ribbonChoice.length > 1) {
-    ribbonChoice.shift();
-  }
-  var showRibbon = document.getElementById("ribbonChoice");
-  showRibbon.innerHTML = n.name + " - $" + n.price.toFixed(2);
-  bagTotal();
-}
-
- function addItems(n) {
-  itemsChoice.push(n)
-
-  var showItems = document.getElementById("itemsChoice");
-  showItems.innerHTML = n.name + " - $" + n.price;
-  bagTotal();
 }

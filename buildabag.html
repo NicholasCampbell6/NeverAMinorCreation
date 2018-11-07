@@ -28,6 +28,7 @@
     <div class = "main">
       <div class = "sub">
         <div id = "buildabagLayout">
+
           <div class = "instuctions">
             <h3>Easy as 1-2-3!</h3>
             <ol>
@@ -37,6 +38,7 @@
             </ol>
             <p>That's all. We put the bags together & they are ready to hand out at your celebration!</p>
           </div>
+
           <div id = "priceTrackerCell">
             <div class = "priceTracker">
               <h3>Your Goody Bag</h3>
@@ -50,6 +52,7 @@
               <h5 id = "totalPrice">$0.00</h5>
             </div>
           </div>
+
           <div class = "itemGrid">
             <h4 class = "itemType">Bag Designs:</h4>
             <div class = "BABItem">
@@ -92,81 +95,247 @@
                 Add to Bag
               </button>
             </div>
+            <div class = "BABItem">
+              <img src = "./images/dotsbag.jpg"></img>
+              <h4>Dots Bag</h4>
+              <h5>$0.15</h5>
+              <button onclick = "addBag(dotsBag)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/FlowerBag.jpg"></img>
+              <h4>Flower Bag</h4>
+              <h5>$0.15</h5>
+              <button onclick = "addBag(flowerBag)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/hbags.jpg"></img>
+              <h4>Halloween Assortment</h4>
+              <h5>$0.15</h5>
+              <button onclick = "addBag(halloweenAssortment)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/neon net back pack.jpg"></img>
+              <h4>Neon Net Backpack Large</h4>
+              <h5>$1.50</h5>
+              <button onclick = "addBag(neonNetBackpackLarge)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/retro.jpg"></img>
+              <h4>Retro Bag</h4>
+              <h5>$0.15</h5>
+              <button onclick = "addBag(retroBag)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/sports.jpg"></img>
+              <h4>Sports Bag</h4>
+              <h5>$0.15</h5>
+              <button onclick = "addBag(sportsBag)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/sportsdrawstringbag.jpg"></img>
+              <h4>Sports Drawstring Bag Large</h4>
+              <h5>$1.50</h5>
+              <button onclick = "addBag(sportsDrawstringBagLarge)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/starsbag.jpg"></img>
+              <h4>Stars Bag</h4>
+              <h5>$0.15</h5>
+              <button onclick = "addBag(starsBag)">
+                Add to Bag
+              </button>
+            </div>
           </div>
 
-            <div class = "itemGrid">
-              <h4 class = "itemType">Ribbons:</h4>
-              <div class = "BABItem">
-                <img src = "./images/NoRibbons.jpg"></img>
-                <h4>No Ribbon</h4>
-                <h5>$0.00</h5>
-                <button onclick = "addRibbon(noRibbon)">
-                  Add to Bag
-                </button>
-              </div>
-              <div class = "BABItem">
-                <img src = "./images/OrangeRibbon.jpg"></img>
-                <h4>Orange Ribbon</h4>
-                <h5>$0.50</h5>
-                <button onclick = "addRibbon(orangeRibbon)">
-                  Add to Bag
-                </button>
-              </div>
-              <div class = "BABItem">
-                <img src = "./images/PINKRIbbon.jpg"></img>
-                <h4>Pink Ribbon</h4>
-                <h5>$0.50</h5>
-                <button onclick = "addRibbon(pinkRibbon)">
-                  Add to Bag
-                </button>
-              </div>
-              <div class = "BABItem">
-                <img src = "./images/RedRibbon.jpg"></img>
-                <h4>Red Ribbon</h4>
-                <h5>$0.50</h5>
-                <button onclick = "addRibbon(redRibbon)">
-                  Add to Bag
-                </button>
-              </div>
-              <div class = "BABItem">
-                <img src = "./images/YellowRibbon.jpg"></img>
-                <h4>Yellow Ribbon</h4>
-                <h5>$0.50</h5>
-                <button onclick = "addRibbon(yellowRibbon)">
-                  Add to Bag
-                </button>
-              </div>
+          <div id = "ribbonGrid">
+            <h4 class = "itemType">Ribbons:</h4>
+            <div class = "BABItem">
+              <img src = "./images/NoRibbons.jpg"></img>
+              <h4>No Ribbon</h4>
+              <h5>$0.00</h5>
+              <button onclick = "addRibbon(noRibbon)">
+                Add to Bag
+              </button>
             </div>
+            <div class = "BABItem">
+              <img src = "./images/OrangeRibbon.jpg"></img>
+              <h4>Orange Ribbon</h4>
+              <h5>$0.50</h5>
+              <button onclick = "addRibbon(orangeRibbon)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/PINKRIbbon.jpg"></img>
+              <h4>Pink Ribbon</h4>
+              <h5>$0.50</h5>
+              <button onclick = "addRibbon(pinkRibbon)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/RedRibbon.jpg"></img>
+              <h4>Red Ribbon</h4>
+              <h5>$0.50</h5>
+              <button onclick = "addRibbon(redRibbon)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/YellowRibbon.jpg"></img>
+              <h4>Yellow Ribbon</h4>
+              <h5>$0.50</h5>
+              <button onclick = "addRibbon(yellowRibbon)">
+                Add to Bag
+              </button>
+            </div>
+          </div>
 
-            <div class = "itemGrid">
-              <div class = "BABItem">
-                <img src = "./images/mixcandy.jpg"></img>
-                <h4>10 Pieces of Candy</h4>
-                <h5>$0.95</h5>
-                <button onclick = "addItems(candy10pieces)">
-                  Add to Bag
-                </button>
-              </div>
-              <div class = "BABItem">
-                <img src = "./images/carBalloonRacer.jpg"></img>
-                <h4>Car Balloon Racer</h4>
-                <h5>$0.75</h5>
-                <button onclick = "addItems(carBalloonRacer)">
-                  Add to Bag
-                </button>
-              </div>
+          <div class = "itemGrid">
+            <h4 class = "itemType">Items:</h4>
+            <div class = "BABItem">
+              <img src = "./images/mixcandy.jpg"></img>
+              <h4>10 Pieces of Candy</h4>
+              <h5>$0.95</h5>
+              <button onclick = "addItems(candy10pieces)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/carBalloonRacer.jpg"></img>
+              <h4>Car Balloon Racer</h4>
+              <h5>$0.75</h5>
+              <button onclick = "addItems(carBalloonRacer)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/AirHead.jpg"></img>
+              <h4>1 Air Head</h4>
+              <h5>$0.25</h5>
+              <button onclick = "addItems(airHead)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/army men.jpg"></img>
+              <h4>4 Army Men</h4>
+              <h5>$0.35</h5>
+              <button onclick = "addItems(armyMen)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/beachball.jpg"></img>
+              <h4>Beach Ball</h4>
+              <h5>$1.50</h5>
+              <button onclick = "addItems(beachBall)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/cupAndBall.jpg"></img>
+              <h4>Cup & Ball Game</h4>
+              <h5>$0.40</h5>
+              <button onclick = "addItems(cupAndBall)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/fingerbeams.jpg"></img>
+              <h4>Finger Beams</h4>
+              <h5>$0.55</h5>
+              <button onclick = "addItems(fingerBeams)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/lipwhistle.jpg"></img>
+              <h4>Lip Whistle</h4>
+              <h5>$0.45</h5>
+              <button onclick = "addItems(lipWhistle)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/miniBasketballGame.jpg"></img>
+              <h4>Mini Basketball Game</h4>
+              <h5>$0.40</h5>
+              <button onclick = "addItems(miniBasketballGame)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/MiniFlyingSaucer.jpg"></img>
+              <h4>Mini Flying Saucer</h4>
+              <h5>$0.35</h5>
+              <button onclick = "addItems(miniFlyingSaucer)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/neonchalk.jpg"></img>
+              <h4>Neon Chalk Board</h4>
+              <h5>$0.70</h5>
+              <button onclick = "addItems(neonChalkBoard)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/triangleGame.jpg"></img>
+              <h4>Triangle Game</h4>
+              <h5>$1.70</h5>
+              <button onclick = "addItems(triangleGame)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/metal slap.jpg"></img>
+              <h4>Metal Slap Band</h4>
+              <h5>$0.60</h5>
+              <button onclick = "addItems(metalSlapBand)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/GIDBounceBall.jpg"></img>
+              <h4>Glow in the Dark Bounce Ball</h4>
+              <h5>$0.25</h5>
+              <button onclick = "addItems(gidBounceBall)">
+                Add to Bag
+              </button>
+            </div>
+            <div class = "BABItem">
+              <img src = "./images/crayons.jpg"></img>
+              <h4>Crayons</h4>
+              <h5>$0.35</h5>
+              <button onclick = "addItems(crayons)">
+                Add to Bag
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
 
   <footer>
     <h4><a href="./premade.html">Premade Bags</a></h4>
     <h4><a href="./wholesale.html"> Wholesale Bags</a></h4>
-    <h4><a href="./buildabag.html">Build-a-Bag<a/></h4>
+    <h4><a href="./buildabag.html">Build-a-Bag</a></h4>
     <h4><a href="./shipping.html">Shipping</a></h4>
     <h4><a href= "./contact.html">Customer Service</a></h4>
     <a id="logo" href = "./index.html"><img src = "./images/logo.png"></img></a>
