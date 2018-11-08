@@ -4,7 +4,7 @@ var bagChoice = [];
 var ribbonChoice = [];
 var itemsChoice = [];
 
-//varructor for items
+//Constructor for items
 
 class item {
   constructor(name, price) {
@@ -73,7 +73,7 @@ function addBag(n) {
   bagTotal();
 }
 
- function addRibbon(n) {
+function addRibbon(n) {
   ribbonChoice.push(n)
   if (ribbonChoice.length > 1) {
     ribbonChoice.shift();
@@ -83,18 +83,20 @@ function addBag(n) {
   bagTotal();
 }
 
- function addItems(n) {
-   for (i = 0; i < itemsChoice.length; i++) {
-     if (itemsChoice[i] === n) {
-       itemsChoice.splice(i, 1);
-     }
-   }
-   itemsChoice.push(n);
+function addItems(n) {
+  for (i = 0; i < itemsChoice.length; i++) {
+  if (itemsChoice[i] === n) {
+    itemsChoice.splice(i, 1);
+    }
+  }
+  itemsChoice.push(n);
 
-   var showItems = document.getElementById("itemsChoice");
-   showItems.innerHTML = n.name + " - $" + n.price;
-   bagTotal();
-   console.log(itemsChoice);
+  var items = document.createElement("h5");
+  var t = document.createTextNode(n.name + " - $" + n.price.toFixed(2))
+  items.appendChild(t);
+  document.getElementById("itemsChoice").appendChild(items);
+  bagTotal();
+ //console.log(itemsChoice);
 }
 
 function bagTotal() {
@@ -117,6 +119,6 @@ function bagTotal() {
   }
   itemsChoiceTotal();
   total = bagChoiceTotal + ribbonChoiceTotal + prices.reduce(getSum);
-  var totalPrice = document.getElementById("totalPrice");
+  var totalPrice = document.getElementById("pricePerBag");
   totalPrice.innerHTML = "$" + total.toFixed(2);
 }

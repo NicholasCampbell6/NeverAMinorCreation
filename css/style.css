@@ -121,26 +121,6 @@ p {
   font-size: .9em;
 }
 
-table {
-  width: 100%;
-  text-align: center;
-  border: .01em solid black;
-  margin: auto;
-  border-collapse: collapse;
-}
-
-tr {
-  line-height: 1.5em;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-th {
-  background-color: #bfbfbf;
-}
-
 h2 {
   font-family: "Noto Serif";
 }
@@ -367,10 +347,12 @@ img {
   margin: .5em;
 }
 
+
 .BABItem h4,
 .BABItem h5 {
   margin: 0 auto;
 }
+
 .BABItem img {
   height: 5em;
   width: auto;
@@ -382,4 +364,26 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: .3fr 12em 12em;
   text-align: center;
+}
+
+/*Shipping Page*/
+
+table {
+  width: 100%;
+  text-align: center;
+  border: .01em solid black;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+tr {
+  line-height: 1.5em;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #bfbfbf;
 }
