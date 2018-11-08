@@ -84,11 +84,6 @@ function addRibbon(n) {
 }
 
 function addItems(n) {
-  for (i = 0; i < itemsChoice.length; i++) {
-  if (itemsChoice[i] === n) {
-    itemsChoice.splice(i, 1);
-    }
-  }
   itemsChoice.push(n);
 
   var items = document.createElement("h5");

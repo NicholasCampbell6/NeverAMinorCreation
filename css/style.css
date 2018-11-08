@@ -38,7 +38,7 @@ a {
   position: relative;
   right: auto;
   position: relative;
-  left: 1300px;
+  float: right;
   box-shadow: 2px 2px 5px #666666;
   border-radius: 20px;
   background-color: #ff3333;
