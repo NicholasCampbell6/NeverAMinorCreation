@@ -91,7 +91,29 @@ function addItems(n) {
   items.appendChild(t);
   document.getElementById("itemsChoice").appendChild(items);
   bagTotal();
- //console.log(itemsChoice);
+}
+
+function clearBag() {
+  bagChoice.shift();
+  document.getElementById("bagChoice").removeChild(document.getElementById("bagChoice").firstChild);
+  bagTotal();
+}
+
+function clearRibbon() {
+  ribbonChoice.shift();
+  document.getElementById("ribbonChoice").removeChild(document.getElementById("ribbonChoice").firstChild);
+  bagTotal();
+}
+
+function clearItems() {
+  var choosenItems = document.getElementById("itemsChoice");
+  while (choosenItems.firstChild) {
+    choosenItems.removeChild(choosenItems.firstChild);
+  }
+  while (itemsChoice.length >= 1) {
+    itemsChoice.shift();
+  }
+  bagTotal();
 }
 
 function bagTotal() {
