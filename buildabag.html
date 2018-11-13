@@ -43,10 +43,14 @@
             <div class = "priceTracker">
               <h3>Your Goody Bag</h3>
               <h4>Selected Bag:</h4>
+              <button onclick = "clearBag() ">Click to Remove Bag</button>
               <h5 id = "bagChoice"> </h5>
               <h4 >Selected Ribbon:</h4>
+              <button onclick = "clearRibbon() ">Click to Remove Ribbon</button>
               <h5 id  = "ribbonChoice"> </h5>
-              <h4 id = "itemsChoice">Selected Item(s):</h4>
+              <h4>Selected Item(s):</h4>
+              <button onclick = "clearItems() ">Click to Remove Items</button>
+              <span  id = "itemsChoice" onclick = "clearItems()"></span>
               <h4>Price per Bag:</h4>
               <h5 id = "pricePerBag">$0.00</h5>
             </div>
