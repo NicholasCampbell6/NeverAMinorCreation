@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <p class = "cart">Your Cart</p>
-    <header class ="row">
+    <header>
       <a href = "./index.html"><img src = "./images/logo.png"></img></a>
       <nav>
         <a href = "./premade.html"><button class="button">Premade Bags</button></a>
@@ -42,13 +42,13 @@
           <div id = "priceTrackerCell">
             <div class = "priceTracker">
               <h3>Your Goody Bag</h3>
-              <h4>Selected Bag:</h4>
+              <h4><a href = "#bagDesign">Selected Bag:</a></h4>
               <button onclick = "clearBag() ">Click to Remove Bag</button>
               <h5 id = "bagChoice"> </h5>
-              <h4 >Selected Ribbon:</h4>
+              <h4 ><a href = "#ribbons">Selected Ribbon:</a></h4>
               <button onclick = "clearRibbon() ">Click to Remove Ribbon</button>
               <h5 id  = "ribbonChoice"> </h5>
-              <h4>Selected Item(s):</h4>
+              <h4><a href = "#items">Selected Item(s):</a></h4>
               <button onclick = "clearItems() ">Click to Remove Items</button>
               <span  id = "itemsChoice" onclick = "clearItems()"></span>
               <h4>Price per Bag:</h4>
@@ -57,7 +57,7 @@
           </div>
 
           <div class = "itemGrid">
-            <h4 class = "itemType">Bag Designs:</h4>
+            <h4 id = "bagDesign" class = "itemType">Bag Designs:</h4>
             <div class = "BABItem">
               <img src = "./images/birthday bag.jpg"></img>
               <h4>Birthday Party Bag</h4>
@@ -165,7 +165,7 @@
           </div>
 
           <div id = "ribbonGrid">
-            <h4 class = "itemType">Ribbons:</h4>
+            <h4 id = "ribbons" class = "itemType">Ribbons:</h4>
             <div class = "BABItem">
               <img src = "./images/NoRibbons.jpg"></img>
               <h4>No Ribbon</h4>
@@ -209,7 +209,7 @@
           </div>
 
           <div class = "itemGrid">
-            <h4 class = "itemType">Items:</h4>
+            <h4 id = "items" class = "itemType">Items:</h4>
             <div class = "BABItem">
               <img src = "./images/mixcandy.jpg"></img>
               <h4>10 Pieces of Candy</h4>
@@ -334,6 +334,7 @@
         </div>
       </div>
     </div>
+  </div>
 
   <footer>
     <h4><a href="./premade.html">Premade Bags</a></h4>
