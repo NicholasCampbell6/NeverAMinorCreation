@@ -35,3 +35,23 @@ function showDivs(n) {
     };
     slides[slideIndex-1].style.display = "block";
 };
+
+
+function addToCart(name, pricePerBag, quantity){
+  var quant = document.getElementById(quantity).value;
+  var total = pricePerBag * quant;
+  var cart = document.getElementById("cartBags");
+  var z = document.createElement("h5");
+  var x = document.createTextNode(name + " - $" + pricePerBag.toFixed(2) + " * " + quant + " = $" + total.toFixed(2));
+  z.append(x);
+  cart.appendChild(z);
+}
+
+function showCart(){
+  var cart = document.getElementsByClassName("cartDiv");
+  if (cart.style.display === "none") {
+    cart.style.display = "block";
+  } else {
+    cart.style.display = "none";
+  }
+}

@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <p class = "cart">Your Cart</p>
+    <p class = "cart" onclick ="showCart()">Your Cart</p>
     <header>
       <a href = "./index.html"><img src = "./images/logo.png"></img></a>
       <nav>
@@ -46,8 +46,8 @@
             </ul>
             <button onclick = "readMore('dots 1', 'more 1', 'myBtn 1')" id="myBtn 1">Read More</button>
           </span>
-          <input type= "number" name = "quantity" min ="1" max="200"></input>
-          <div class = "addToCart">Add To Cart</div>
+          <input id = "input 1" type= "number" name = "quantity" min ="1" max="200"></input>
+          <div onclick = "addToCart('Baseball Goody Bag', 3.8, 'input 1')" class = "addToCart">Add To Cart</div>
         </div>
 
         <div class = "item">
@@ -251,6 +251,10 @@
           <div class = "addToCart">Add To Cart</div>
         </div>
       </div>
+    </div>
+    <div class = "cartDiv">
+      <h4>Selected Bags:</h4>
+      <span id = "cartBags"></span>
     </div>
   </div>
 

@@ -32,9 +32,9 @@
           <div class = "instuctions">
             <h3>Easy as 1-2-3!</h3>
             <ol>
-              <li>Choose a bag design</li>
-              <li>Choose a ribbon color (Optional)</li>
-              <li>Choose your items</li>
+              <li>Choose a <a href = "#bagDesign">bag design</a></li>
+              <li>Choose a <a href = "#ribbons">ribbon</a> color (Optional)</li>
+              <li>Choose your <a href = "#items">items</a></li>
             </ol>
             <p>That's all. We put the bags together & they are ready to hand out at your celebration!</p>
           </div>
@@ -53,6 +53,10 @@
               <span  id = "itemsChoice" onclick = "clearItems()"></span>
               <h4>Price per Bag:</h4>
               <h5 id = "pricePerBag">$0.00</h5>
+              <input id = "BABSelector" type= "number" name = "quantity" min ="1" max="200"></input>
+              <button onclick = "addToCart()">Add to Cart</button>
+              <h4>Total Price:</h4>
+              <h5 id = "totalPrice"></h5>
             </div>
           </div>
 

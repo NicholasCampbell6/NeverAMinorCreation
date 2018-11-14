@@ -25,7 +25,6 @@ a {
 .cart {
   text-align: right;
   display: inline-flex;
-  opacity: .7;
   height: 1em;
   width: auto;
   position: relative;
@@ -34,12 +33,17 @@ a {
   float: right;
   box-shadow: 2px 2px 5px #666666;
   border-radius: 20px;
-  background-color: #ff3333;
+  background: linear-gradient(to bottom, #ff9999 0%, #ff3333 100%);
   text-align: center;
   padding: 20px 20px;
   font-family: "Montserrat";
   color: white;
   font-weight: bold;
+}
+
+.cart:hover{
+  cursor: pointer;
+  background: linear-gradient(to top, #ff9999 0%, #ff3333 100%);
 }
 
 .cart img {
@@ -52,9 +56,18 @@ a {
   position: relative;
   right: auto;
   background-color: black;
-
 }
 
+.cartDiv {
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 1em;
+  width: 30em;
+  position: absolute;
+  top: 4em;
+  right: 1em;
+  display: none;
+}
 
 .button {
   box-shadow: 2px 2px 5px #666666;
@@ -71,6 +84,7 @@ a {
 
 .button:hover {
   cursor: pointer;
+  background: linear-gradient(to top, #ff9999 0%, #ff3333 100%);
 }
 
 .button:active {
@@ -137,6 +151,7 @@ h2 {
   margin: auto;
   background-color: white;
   padding-left: .5em;
+  border-radius: 1em;
 }
 
 .heading {
@@ -262,6 +277,7 @@ input {
     padding: 1em;
     width: 96.5%;
     border-radius: 4em;
+    height: 12.5em;
 }
 
 
@@ -317,6 +333,11 @@ input {
   right: 1em;
 }
 
+.addToCart:hover{
+  cursor: pointer;
+  background: linear-gradient(to top, #ff9999 0%, #ff3333 100%);
+}
+
 /*Build a Bag*/
 
 #buildabagLayout {
@@ -360,6 +381,11 @@ input {
 .priceTracker button {
   background: inherit;
   font-family: "Noto Serif";
+}
+
+#BABSelector {
+  float: none;
+  position: static;
 }
 
 .itemGrid {

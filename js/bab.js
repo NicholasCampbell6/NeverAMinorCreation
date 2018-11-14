@@ -97,12 +97,14 @@ function clearBag() {
   bagChoice.shift();
   document.getElementById("bagChoice").removeChild(document.getElementById("bagChoice").firstChild);
   bagTotal();
+  addToCart();
 }
 
 function clearRibbon() {
   ribbonChoice.shift();
   document.getElementById("ribbonChoice").removeChild(document.getElementById("ribbonChoice").firstChild);
   bagTotal();
+  addToCart();
 }
 
 function clearItems() {
@@ -114,7 +116,10 @@ function clearItems() {
     itemsChoice.shift();
   }
   bagTotal();
+  addToCart();
 }
+
+var total;
 
 function bagTotal() {
   if (bagChoice.length === 0){
@@ -138,4 +143,12 @@ function bagTotal() {
   total = bagChoiceTotal + ribbonChoiceTotal + prices.reduce(getSum);
   var totalPrice = document.getElementById("pricePerBag");
   totalPrice.innerHTML = "$" + total.toFixed(2);
+}
+
+function addToCart () {
+  var quantity = document.getElementById("BABSelector").value;
+  var priceForAll = total * quantity;
+  console.log(quantity);
+  var cartPrice = document.getElementById("totalPrice");
+  cartPrice.innerHTML = "$"+priceForAll.toFixed(2);
 }
