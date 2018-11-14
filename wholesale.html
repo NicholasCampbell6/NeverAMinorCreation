@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <p class = "cart">Your Cart</p>
-    <header>
+    <header class ="row">
       <a href = "./index.html"><img src = "./images/logo.png"></img></a>
       <nav>
         <a href = "./premade.html"><button class="button">Premade Bags</button></a>
@@ -32,43 +32,106 @@
           <h3 class = "itemName">Chocolate Candy Goodie Bag</h3>
           <h4 class = "itemPrice">$3.65</h4>
           <span class = "description">
-          <p>Bag includes a minimum of 13 pieces of chocolate candy with<br> twist tie and ready to hand out:
-          <br>**Chocolate will vary based on availability</li></p>
-
-          </span>
-          <input type= "number" name = "quantity" min ="50" max="1000"></input>
-          <div class = "addToCart">Add To Cart</div>
-        </div>
-        <div class = "item">
-          <img src = "./images/xctmpnkvZGY.png"></img>
-          <h3 class = "itemName">Standard Candy Goodie Bag </h3>
-          <h4 class = "itemPrice">$2.40</h4>
-          <span class = "description">
-            <p>Bag includes a minimum of 25 pieces of chocolate candy with twist tie<br> and ready to hand out:
-            <br>**Chocolate will vary based on availability</p>
-          </span>
-          <input type= "number" name = "quantity" min ="50" max="1000"></input>
-          <div class = "addToCart">Add To Cart</div>
-        </div>
-
-        <div class = "item">
-          <img src = "./images/BulkBag4.jpg"></img>
-          <h3 class = "itemName">Wholesale Goodie Bag</h3>
-          <h4 class = "itemPrice">$1.95</h4>
-          <span class = "description">
-            <p>Each Bag contains the following items:</p>
-            <ul>
-              <li>Mini Flute (from assortment)<span id = "dots 1">...</span></li>
-              <span style = "display: none;" id = "more 1"><li>Stretchable Flying Frog</li>
-                <li>1" (25mm) Glow-in-the dark bouncing ball (from assortment)</li>
-                <li>Tattoo (from assortment)</li>
-                <li>Spin Top (from assortment)
-                </li><br>**In rare instances, we may have to replace an item of equal or greater cost**</br>
-              </span>
-            </ul>
+          <p>Each Bag contains the following items:</p>
+          <ul>
+            <li>Bag includes a minimum of 13 pieces of chocolate candy with twist tie and ready to hand out:<span id = "dots 1">...</span></li>
+            <span style = "display: none;" id = "more 1">
+              <br>**Chocolate will vary based on availability</br></span>
+        </ul>
         <button onclick = "readMore('dots 1', 'more 1', 'myBtn 1')" id="myBtn 1">Read More</button>
+        </span>
+        <div class = "addToCart">Add To Cart</div>
+      </div>
+      <div class = "item">
+        <img src = "./images/xctmpnkvZGY.png"></img>
+        <h3 class = "itemName">Standard Candy Goodie Bag</h3>
+        <h4 class = "itemPrice">$2.40</h4>
+        <span class = "description">
+        <p>Each Bag contains the following items:</p>
+        <ul>
+          <li>Bag includes a minimum of 25 pieces of candy with twist tie and ready to hand out:<span id = "dots 2">...</span></li>
+          <span style = "display: none;" id = "more 2">
+          <br>**Chocolate will vary based on availability</br></span>
+        </ul>
+        <button onclick = "readMore('dots 2', 'more 2', 'myBtn 2')" id="myBtn 2">Read More</button>
       </span>
-      <input type= "number" name = "quantity" min ="50" max="1000"></input>
+      <div class = "addToCart">Add To Cart</div>
+    </div>
+    <div class = "item">
+      <img src = "./images/BulkBag4.jpg"></img>
+      <h3 class = "itemName">Wholesale Goodie Bag #4</h3>
+      <h4 class = "itemPrice">$1.95</h4>
+      <span class = "description">
+        <p>Each Bag contains the following items:</p>
+        <ul>
+          <li>Bag includes a minimum of 25 pieces of chocolate candy with twist tie and ready to hand out:<span id = "dots 3">...</span></li>
+          <span style = "display: none;" id = "more 3"><li>Mini Flute (from assortment)</li>
+          <li>Stretchable Flying Frog</li>
+          <li>1" (25mm) Glow-in-the dark bouncing ball (from assortment)</li>
+          <li>Tattoo (from assortment)</li>
+          <li>Spin Top (from assortment)
+          </li><br>**In rare instances, we may have to replace an item of equal or greater cost**</br></span>
+         </ul>
+        <button onclick = "readMore('dots 3', 'more 3', 'myBtn 3')" id="myBtn 3">Read More</button>
+      </span>
+      <div class = "addToCart">Add To Cart</div>
+    </div>
+    <div class = "item">
+      <img src = "./images/RewardBag.jpg"></img>
+      <h3 class = "itemName">Rewards Goodie Bag</h3>
+      <h4 class = "itemPrice">$1.80</h4>
+      <span class = "description">
+        <p>Each Bag contains the following items:</p>
+        <ul>
+          <li>Bag includes the following items with twist tie and ready to hand out:<span id = "dots 4">...</span></li>
+          <span style = "display: none;" id = "more 4"><li>Mini Note Pad</li>
+          <li>Pencil Grip</li>
+          <li>Pencil</li>
+          <li>Mini Plastic Kazoo</li>
+          <li>Smile Face Spin Top
+          </li><br>**In rare instances, we may have to replace an item of equal or greater cost**</br></span>
+         </ul>
+        <button onclick = "readMore('dots 4', 'more 4', 'myBtn 4')" id="myBtn 4">Read More</button>
+      </span>
+      <div class = "addToCart">Add To Cart</div>
+    </div>
+    <div class = "item">
+      <img src = "./images/SportsBulkBag.jpg"></img>
+      <h3 class = "itemName">Wholesale Sports Goodie Bag</h3>
+      <h4 class = "itemPrice">$1.80</h4>
+      <span class = "description">
+        <p>Each Bag contains the following items:</p>
+        <ul>
+          <li>Bag includes a minimum of 25 pieces of chocolate candy with twist tie and ready to hand out:<span id = "dots 5">...</span></li>
+          <span style = "display: none;" id = "more 5"><li>Mini Sports Popper (from assortment)</li>
+          <li>Mini Sports Missiole(from assortment)</li>
+          <li>Sports Sayings Bracelet (from assortment)</li>
+          <li>Mini Basketball Game (assembly required)</li>
+          <li>Sports Tattoo (from assortment)
+          </li><br>**All items are for children ages 3 and up**</br></span>
+         </ul>
+        <button onclick = "readMore('dots 5', 'more 5', 'myBtn 5')" id="myBtn 5">Read More</button>
+      </span>
+      <div class = "addToCart">Add To Cart</div>
+    </div>
+    <div class = "item">
+      <img src = "./images/BULK-BAG2.jpg"></img>
+      <h3 class = "itemName">Wholesale Goodie Bag #2</h3>
+      <h4 class = "itemPrice">$1.95</h4>
+      <span class = "description">
+        <p>Each Bag contains the following items:</p>
+        <ul>
+          <li>Bag includes the following items with twist tie and ready to hand out:<span id = "dots 6">...</span></li>
+          <span style = "display: none;" id = "more 6"><li>Beach Safe with Lanyard (from assortment)</li>
+          <li>Kaleidescope (from assortment)</li>
+          <li>Spin Top (from assortment)</li>
+          <li>Tattoo (from assortment)</li>
+          <li>Parachute Man (from assortment)</li>
+          <li>Mini Telescope (from assortment)
+          <br>**In rare instances, we may have to replace an item of equal or greater cost**</br></span>
+         </ul>
+        <button onclick = "readMore('dots 6', 'more 6', 'myBtn 6')" id="myBtn 6">Read More</button>
+      </span>
       <div class = "addToCart">Add To Cart</div>
     </div>
   </div>
