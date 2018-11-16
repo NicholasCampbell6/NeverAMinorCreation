@@ -9,7 +9,11 @@
 </head>
 <body>
   <div class="container">
-    <p class = "cart">Your Cart</p>
+    <p class = "cart" onclick ="showCart()">Your Cart</p>
+    <div class = "cartDiv">
+      <h4>Selected Bags:</h4>
+      <span id = "cartBags"></span>
+    </div>
     <header>
       <a href = "./index.html"><img src = "./images/logo.png"></img></a>
       <nav>
@@ -53,7 +57,7 @@
               <span  id = "itemsChoice" onclick = "clearItems()"></span>
               <h4>Price per Bag:</h4>
               <h5 id = "pricePerBag">$0.00</h5>
-              <input id = "BABSelector" type= "number" name = "quantity" min ="1" max="200"></input>
+              <input id = "BABSelector" type= "number" value = "1" name = "quantity" min ="1" max="200"></input>
               <button onclick = "addToCart()">Add to Cart</button>
               <h4>Total Price:</h4>
               <h5 id = "totalPrice"></h5>

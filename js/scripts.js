@@ -48,7 +48,7 @@ function addToCart(name, pricePerBag, quantity){
 }
 
 function showCart(){
-  var cart = document.getElementsByClassName("cartDiv");
+  var cart = document.querySelector(".cartDiv");
   if (cart.style.display === "none") {
     cart.style.display = "block";
   } else {

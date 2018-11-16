@@ -10,6 +10,10 @@
 <body>
   <div class="container">
     <p class = "cart" onclick ="showCart()">Your Cart</p>
+    <div class = "cartDiv">
+      <h4>Selected Bags:</h4>
+      <span id = "cartBags"></span>
+    </div>
     <header>
       <a href = "./index.html"><img src = "./images/logo.png"></img></a>
       <nav>
@@ -46,7 +50,7 @@
             </ul>
             <button onclick = "readMore('dots 1', 'more 1', 'myBtn 1')" id="myBtn 1">Read More</button>
           </span>
-          <input id = "input 1" type= "number" name = "quantity" min ="1" max="200"></input>
+          <input id = "input 1" type= "number" value = "1" name = "quantity" min ="1" max="200"></input>
           <div onclick = "addToCart('Baseball Goody Bag', 3.8, 'input 1')" class = "addToCart">Add To Cart</div>
         </div>
 
@@ -72,8 +76,8 @@
             </ul>
             <button onclick = "readMore('dots 2', 'more 2', 'myBtn 2')" id="myBtn 2">Read More</button>
           </span>
-          <input type= "number" name = "quantity" min ="1" max="200"></input>
-          <div class = "addToCart">Add To Cart</div>
+          <input id = "input 2" type= "number" value = "1" name = "quantity" min ="1" max="200"></input>
+          <div onclick = "addToCart('Deluxe Camouflage Goodie Bag', 6.25, 'input 2')" class = "addToCart">Add To Cart</div>
         </div>
         <div class = "item">
           <img src = "./images/DinosuarBag.jpg"></img>
@@ -95,8 +99,8 @@
             </ul>
             <button onclick = "readMore('dots 3', 'more 3', 'myBtn 3')" id="myBtn 3">Read More</button>
           </span>
-          <input type= "number" name = "quantity" min ="1" max="200"></input>
-          <div class = "addToCart">Add To Cart</div>
+          <input id = "input 3" type= "number" value = "1" name = "quantity" min ="1" max="200"></input>
+          <div onclick = "addToCart('Dinosaur Goody Bag', 3.75, 'input 3')" class = "addToCart">Add To Cart</div>
         </div>
         <div class = "item">
           <img src = "./images/DeluxePrincess.jpg"></img>
@@ -120,8 +124,8 @@
             </ul>
             <button onclick = "readMore('dots 4', 'more 4', 'myBtn 4')" id="myBtn 4">Read More</button>
           </span>
-          <input type= "number" name = "quantity" min ="1" max="200"></input>
-          <div class = "addToCart">Add To Cart</div>
+          <input id = "input 4" type= "number" value = "1" name = "quantity" min ="1" max="200"></input>
+          <div onclick = "addToCart('Deluxe Princess Goodie Bag', 5.75, 'input 4')" class = "addToCart">Add To Cart</div>
         </div>
         <div class = "item">
           <img src = "./images/barrel of slime.jpg"></img>
@@ -141,8 +145,8 @@
             </ul>
             <button onclick = "readMore('dots 5', 'more 5', 'myBtn 5')" id="myBtn 5">Read More</button>
           </span>
-          <input type= "number" name = "quantity" min ="1" max="200"></input>
-          <div class = "addToCart">Add To Cart</div>
+          <input id = "input 5" type= "number" value = "1" name = "quantity" min ="1" max="200"></input>
+          <div onclick = "addToCart('Boys Will Be Boys', 7.1, 'input 5')" class = "addToCart">Add To Cart</div>
         </div>
         <div class = "item">
           <img src = "./images/diary.jpg"></img>
@@ -162,8 +166,8 @@
             </ul>
             <button onclick = "readMore('dots 6', 'more 6', 'myBtn 6')" id="myBtn 6">Read More</button>
           </span>
-          <input type= "number" name = "quantity" min ="1" max="200"></input>
-          <div class = "addToCart">Add To Cart</div>
+          <input id = "input 6" type= "number" value = "1" name = "quantity" min ="1" max="200"></input>
+          <div onclick = "addToCart('Girls Wanna Have Fun', 7.95, 'input 6')" class = "addToCart">Add To Cart</div>
         </div>
         <div class = "item">
           <img src = "./images/MagicBagDeluxe.jpg"></img>
@@ -184,8 +188,8 @@
             </ul>
             <button onclick = "readMore('dots 7', 'more 7', 'myBtn 7')" id="myBtn 7">Read More</button>
           </span>
-          <input type= "number" name = "quantity" min ="1" max="200"></input>
-          <div class = "addToCart">Add To Cart</div>
+          <input id = "input 7" type= "number" value = "1" name = "quantity" min ="1" max="200"></input>
+          <div onclick = "addToCart('Deluxe Magic Goodie Bag', 6.2, 'input 7')" class = "addToCart">Add To Cart</div>
         </div>
         <div class = "item">
           <img src = "./images/Big-kids-game-Bag.jpg"></img>
@@ -204,8 +208,8 @@
             </ul>
             <button onclick = "readMore('dots 8', 'more 8', 'myBtn 8')" id="myBtn 8">Read More</button>
           </span>
-          <input type= "number" name = "quantity" min ="1" max="200"></input>
-          <div class = "addToCart">Add To Cart</div>
+          <input id = "input 8" type= "number" value = "1" name = "quantity" min ="1" max="200"></input>
+          <div onclick = "addToCart('Game Goodie Bag for Big Kids', 4.25, 'input 8')" class = "addToCart">Add To Cart</div>
         </div>
         <div class = "item">
           <img src = "./images/DeluxeKidsGameBag.jpg"></img>
@@ -226,12 +230,12 @@
             </ul>
             <button onclick = "readMore('dots 9', 'more 9', 'myBtn 9')" id="myBtn 9">Read More</button>
           </span>
-          <input type= "number" name = "quantity" min ="1" max="200"></input>
-          <div class = "addToCart">Add To Cart</div>
+          <input id = "input 9" type= "number" value = "1" name = "quantity" min ="1" max="200"></input>
+          <div onclick = "addToCart('Deluxe Game Goodie Bag', 5.65, 'input 9')" class = "addToCart">Add To Cart</div>
         </div>
         <div class = "item">
           <img src = "./images/fan-fare-01.jpg"></img>
-          <h3 class = "itemName">Fan Fare Goodie Bage</h3>
+          <h3 class = "itemName">Fan Fare Goodie Bag</h3>
           <h4 class = "itemPrice">$3.95</h4>
           <span class = "description">
             <p>Each Bag contains the following items:</p>
@@ -247,14 +251,10 @@
             </ul>
             <button onclick = "readMore('dots 10', 'more 10', 'myBtn 10')" id="myBtn 10">Read More</button>
           </span>
-          <input type= "number" name = "quantity" min ="1" max="200"></input>
-          <div class = "addToCart">Add To Cart</div>
+          <input id = "input 10" type= "number" value = "1" name = "quantity" min ="1" max="200"></input>
+          <div onclick = "addToCart('Fan Fare Goodie Bag', 3.95, 'input 10')" class = "addToCart">Add To Cart</div>
         </div>
       </div>
-    </div>
-    <div class = "cartDiv">
-      <h4>Selected Bags:</h4>
-      <span id = "cartBags"></span>
     </div>
   </div>
 

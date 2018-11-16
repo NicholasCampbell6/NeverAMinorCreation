@@ -152,3 +152,21 @@ function addToCart () {
   var cartPrice = document.getElementById("totalPrice");
   cartPrice.innerHTML = "$"+priceForAll.toFixed(2);
 }
+
+function showCart(){
+  var cart = document.getElementsByClassName("cartDiv");
+  if (cart.style.display === "none") {
+    cart.style.display = "block";
+  } else {
+    cart.style.display = "none";
+  }
+}
+
+function showCart(){
+  var cart = document.querySelector(".cartDiv");
+  if (cart.style.display === "none") {
+    cart.style.display = "block";
+  } else {
+    cart.style.display = "none";
+  }
+}

@@ -9,7 +9,11 @@
 </head>
 <body onload = "showDivs(slideIndex)">
   <div class="container">
-    <p class = "cart">Your Cart</p>
+    <p class = "cart" onclick ="showCart()">Your Cart</p>
+    <div class = "cartDiv">
+      <h4>Selected Bags:</h4>
+      <span id = "cartBags"></span>
+    </div>
     <header>
       <a href = "./index.html"><img class ="logo" src = "./images/logo.png"></img></a>
       <nav>
