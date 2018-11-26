@@ -6,20 +6,19 @@ function readMore(x, y, z) {
   var btnText = document.getElementById(z);
 
   if (dots.style.display === "none") {
-    dots.style.display = "inline";
+    dots.style.display = "inline-block";
     btnText.innerHTML = "Read more";
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
     btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
+    moreText.style.display = "inline-block";
   };
 };
 
 //Slide Show
 
 var slideIndex = 1;
-showDivs(slideIndex);
 
 function plusDivs(n){
   showDivs(slideIndex += n);
@@ -33,7 +32,7 @@ function showDivs(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     };
-    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex-1].style.display = "inline-grid";
 };
 
 

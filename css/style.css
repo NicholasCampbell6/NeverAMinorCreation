@@ -195,7 +195,7 @@ input {
 
 .grid {
   background-color: #b3b3ff;
-  margin-top: 1em;
+  margin: 1em 0;
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 97%;
@@ -242,29 +242,30 @@ input {
 }
 
 .slideGroup {
-  display: none;
-  width: auto;
+  position: relative;
+  left: 2.9em;
+  display: inline-grid;
+  width: 95%;
   height: auto;
   background-color: white;
   margin: 1em auto;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  align-content: space-between;
 }
 
 .slides {
   text-align: center;
-  width: 29%;
-  margin: auto;
+  width: 33%;
   display: inline-block;
   font-family: "Noto Serif";
   display: inline;
+  position: relative;
+  left: 8em;
 }
 
-.slides ul {
-  display: inline-block;
-}
-
-.slides ul li{
-  font-size: 1em;
-  text-align: left;
+.slides img {
+  height: 5em;
+  width: auto;
 }
 
 /*Premade Bags and Wholesale Bags*/
@@ -303,6 +304,7 @@ input {
 
 .description {
   display: inline-block;
+  float: left;
   position: absolute;
 }
 
