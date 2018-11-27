@@ -451,3 +451,7 @@ tr:nth-child(even) {
 th {
   background-color: #bfbfbf;
 }
+
+div.content{
+  margin-left: .5em
+}
