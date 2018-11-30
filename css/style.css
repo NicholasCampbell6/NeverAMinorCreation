@@ -211,6 +211,43 @@ input {
   box-shadow: 0px 0px 2px black;
   border: 1px solid black;
   text-align: center;
+  position: relative;
+  height: 18em;
+}
+.cell img {
+  height: 10em;
+  width: auto;
+}
+
+.goTo {
+  padding: 1em;
+  background: linear-gradient(to bottom, #ff9999 0%, #ff3333 100%);
+  border: none;
+  border-radius: 1em;
+  color: white;
+  font-family: "Montserrat";
+  position: absolute;
+  bottom: .2em;
+  right: 1em;
+}
+
+.goTo:hover {
+  background: linear-gradient(to top, #ff9999 0%, #ff3333 100%);
+  cursor: pointer;
+}
+
+.gallery-heading {
+  border-radius: 1em 1em 0 0;
+  background-color: #ff9999;
+  width: 95%;
+  margin: 0 auto;
+  padding: .5em 0;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.gallery-heading h3{
+  font-size: 1em;
 }
 
 .gallery-button {
@@ -260,6 +297,19 @@ input {
 }
 
 .slides {
+  position: relative;
+  height: 23em;
+  width: 33%;
+  display: inline-block;
+  font-family: "Noto Serif";
+  display: inline;
+  justify-self: center;
+  text-align: center;
+}
+
+.slides2 {
+  position: relative;
+  height: 26em;
   width: 33%;
   display: inline-block;
   font-family: "Noto Serif";
@@ -269,6 +319,13 @@ input {
 }
 
 .slides img {
+  height: 10em;
+  width: auto;
+  margin: 1em auto;
+  align: center;
+}
+
+.slides2 img {
   height: 10em;
   width: auto;
   margin: 1em auto;
