@@ -87,6 +87,22 @@ a {
   margin-left: 5em;
 }
 
+@media (min-width: 300px) {
+  .button {
+
+  }
+  .logo {
+    margin-top: 3em;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .logo {
+    margin-top: 3em;
+  }
+}
+
 .button:hover {
   cursor: pointer;
   background: linear-gradient(to top, #ff9999 0%, #ff3333 100%);
@@ -336,7 +352,6 @@ input {
   width: auto;
   margin: 0;
 }
-
 
 
 /*Premade Bags and Wholesale Bags*/
