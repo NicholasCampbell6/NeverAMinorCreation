@@ -87,7 +87,14 @@ a {
   margin-left: 5em;
 }
 
-@media (min-width: 300px) {
+@media (max-width: 1721px){
+  .logo {
+    margin-top: 1.5em;
+  }
+}
+
+
+@media (max-width: 999px) {
   .button {
 
   }
@@ -97,11 +104,16 @@ a {
   }
 }
 
-@media (min-width: 1000px) {
+
+
+/*
+@media (max-width: 1759px) {
   .logo {
-    margin-top: 3em;
+    margin-top: 1.5em;
   }
 }
+*/
+
 
 .button:hover {
   cursor: pointer;
@@ -173,6 +185,7 @@ h2 {
   background-color: white;
   padding-left: .5em;
   border-radius: 1em;
+
 }
 
 .heading {
@@ -211,8 +224,7 @@ input {
 
 /* Homepage */
 
-.grid {
-  background-color: #b3b3ff;
+.grid { 
   margin: 1em 0;
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -302,14 +314,14 @@ input {
   position: relative;
   left: 2.8em;
   display: inline-grid;
-  width: 95%;
+  width: 94.8%;
   height: auto;
   background-color: white;
   margin-bottom: 1em;
   grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
   align-content: space-between;
-  box-shadow: 1px 1px 3px;
   border-radius: 0 0 1em 1em ;
+  border: 1px solid black;
 }
 
 .slides {
@@ -372,22 +384,25 @@ input {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-
+.item div{
+  position: relative;
+}
 
 .itemName {
   font-size: 1.2em;
   display: inline-block;
-  position: relative;
-  bottom: 5em;
-
+  position: absolute;
+  bottom: 1em;;
+  left: 1em;
 }
 
 .itemPrice {
   font-size: 1em;
+  float: left;
   display: inline-block;
-  position: relative;
-  right: 10.5em;
-  bottom: 4em;
+  position: absolute;
+  bottom: 0;
+  left: 1em;
 }
 
 .description {
