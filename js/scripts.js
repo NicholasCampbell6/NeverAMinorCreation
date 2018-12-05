@@ -54,3 +54,10 @@ function showCart(){
     cart.style.display = "none";
   }
 }
+
+function clearCart() {
+  var cart = document.getElementById("cartBags");
+  while (cart.firstChild) {
+    cart.removeChild(cart.firstChild);
+  }
+}

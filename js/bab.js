@@ -148,18 +148,13 @@ function bagTotal() {
 function addToCart () {
   var quantity = document.getElementById("BABSelector").value;
   var priceForAll = total * quantity;
-  console.log(quantity);
   var cartPrice = document.getElementById("totalPrice");
   cartPrice.innerHTML = "$"+priceForAll.toFixed(2);
-}
-
-function showCart(){
-  var cart = document.getElementsByClassName("cartDiv");
-  if (cart.style.display === "none") {
-    cart.style.display = "block";
-  } else {
-    cart.style.display = "none";
-  }
+  var cart = document.getElementById("cartBags");
+  var z = document.createElement("h5");
+  var x = document.createTextNode("Custom Goodie Bag - $"+ total.toFixed(2) + " * " + quantity + " = $" + priceForAll.toFixed(2));
+  z.append(x);
+  cart.appendChild(z);
 }
 
 function showCart(){
@@ -168,5 +163,12 @@ function showCart(){
     cart.style.display = "block";
   } else {
     cart.style.display = "none";
+  }
+}
+
+function clearCart() {
+  var cart = document.getElementById("cartBags");
+  while (cart.firstChild) {
+    cart.removeChild(cart.firstChild);
   }
 }
