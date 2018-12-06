@@ -224,7 +224,7 @@ input {
 
 /* Homepage */
 
-.grid { 
+.grid {
   margin: 1em 0;
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -392,8 +392,8 @@ input {
   font-size: 1.2em;
   display: inline-block;
   position: absolute;
-  bottom: 1em;;
-  left: 1em;
+  top: 1em;
+  right: 4em;
 }
 
 .itemPrice {
@@ -401,8 +401,8 @@ input {
   float: left;
   display: inline-block;
   position: absolute;
-  bottom: 0;
-  left: 1em;
+  top: 3em;
+  right: 10em;
 }
 
 .description {
@@ -415,7 +415,7 @@ input {
   display: inline-block;
   margin: 0;
   height: auto;
-  width: 9em;
+  width: 12em;
   border-radius: 1em;
 }
 
