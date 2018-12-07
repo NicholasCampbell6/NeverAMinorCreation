@@ -104,17 +104,6 @@ a {
   }
 }
 
-
-
-/*
-@media (max-width: 1759px) {
-  .logo {
-    margin-top: 1.5em;
-  }
-}
-*/
-
-
 .button:hover {
   cursor: pointer;
   background: linear-gradient(to top, #ff9999 0%, #ff3333 100%);
@@ -216,7 +205,7 @@ input {
   font-size: 2em;
   width: 2em;
   float: right;
-  position: relative;
+  position: absolute;
   right: 4em;
   top: 3em;
   background: #e6e6e6;
@@ -245,6 +234,12 @@ input {
 .cell img {
   height: 10em;
   width: auto;
+}
+
+@media (max-width: 1670px) {
+  .cell {
+    height: 20em;
+  }
 }
 
 .goTo {
@@ -327,10 +322,12 @@ input {
   border: 1px solid black;
 }
 
+
+
 .slides {
   position: relative;
   height: 23em;
-  width: 33%;
+  width: 100%;
   display: inline-block;
   font-family: "Noto Serif";
   display: inline;
@@ -341,7 +338,7 @@ input {
 .slides2 {
   position: relative;
   height: 26em;
-  width: 33%;
+  width: 100%;
   display: inline-block;
   font-family: "Noto Serif";
   display: inline;
@@ -350,17 +347,15 @@ input {
 }
 
 .slides img {
-  height: 10em;
+  height: 10em;;
   width: auto;
   margin: 1em auto;
-  align: center;
 }
 
 .slides2 img {
   height: 10em;
   width: auto;
   margin: 1em auto;
-  align: center;
 }
 
 .slides h4 {
@@ -403,7 +398,7 @@ input {
   float: left;
   display: inline-block;
   position: absolute;
-  top: 3em;
+  top: 4em;
 }
 
 .description {
@@ -437,9 +432,18 @@ input {
   font-family: "Montserrat";
   text-align: center;
   float: right;
-  position: relative;
+  position: absolute !important;
   top: 2em;
-  right: 1em;
+  right: 5em;
+}
+
+@media (max-width: 1360px) {
+  .addToCart {
+    right: 1.6em;
+  }
+  input {
+    right: 2em;
+  }
 }
 
 .addToCart:hover{
