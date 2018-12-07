@@ -310,14 +310,17 @@ input {
   border-radius: 0 0 0 1em;
 }
 
+.slidecontainer {
+  margin: 0 auto 1em auto;
+  width: 94.8%
+}
+
 .slideGroup {
-  position: relative;
-  left: 2.8em;
-  display: inline-grid;
-  width: 94.8%;
+  margin: 0 auto;
+  display: grid;
+  width: 100%;
   height: auto;
   background-color: white;
-  margin-bottom: 1em;
   grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
   align-content: space-between;
   border-radius: 0 0 1em 1em ;
@@ -381,7 +384,7 @@ input {
     border-radius: 4em;
     height: 12.5em;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
 }
 
 .item div{
@@ -393,7 +396,6 @@ input {
   display: inline-block;
   position: absolute;
   top: 1em;
-  right: 4em;
 }
 
 .itemPrice {
@@ -402,7 +404,6 @@ input {
   display: inline-block;
   position: absolute;
   top: 3em;
-  right: 10em;
 }
 
 .description {
