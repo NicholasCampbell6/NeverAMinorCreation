@@ -87,17 +87,19 @@ a {
 
 @media (max-width: 1721px){
   .logo {
-    margin-top: 1.5em;
+    margin-top: 2em;
   }
 }
 
 
 @media (max-width: 999px) {
   .button {
-
+    width: 10em;
+    height: 5em;
+    margin: 0;
   }
   .logo {
-    margin-top: 3em;
+    margin-top: 2em;
     margin-right: 0;
   }
 }
