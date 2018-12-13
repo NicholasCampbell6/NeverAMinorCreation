@@ -7,13 +7,13 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
   <script type="text/javascript" src="./js/bab.js"></script>
 </head>
-<body>
+<body onload ="showCart()">
   <div class="container">
     <p class = "cart" onclick ="showCart()">Your Cart</p>
     <div class = "cartDiv">
-      <h4>Selected Bags:</h4>
-      <button onclick = "clearCart()">Click to Clear your Cart</button>
+      <h3 style = "text-align: center; border-bottom: 1px solid black">Selected Bags:</h3>
       <span id = "cartBags"></span>
+      <button class = "remove" onclick = "clearCart()">Click to Clear your Cart</button>
     </div>
     <header>
       <a href = "./index.html"><img class = "logo" src = "./images/logo.png"></img></a>
@@ -48,14 +48,14 @@
             <div class = "priceTracker">
               <h3>Your Goody Bag</h3>
               <h4><a href = "#bagDesign">Selected Bag:</a></h4>
-              <button onclick = "clearBag() ">Click to Remove Bag</button>
+              <button class = "remove" onclick = "clearBag() ">Click to Remove Bag</button>
               <h5 id = "bagChoice"> </h5>
               <h4 ><a href = "#ribbons">Selected Ribbon:</a></h4>
-              <button onclick = "clearRibbon() ">Click to Remove Ribbon</button>
+              <button class = "remove" onclick = "clearRibbon() ">Click to Remove Ribbon</button>
               <h5 id  = "ribbonChoice"> </h5>
               <h4><a href = "#items">Selected Item(s):</a></h4>
-              <button onclick = "clearItems() ">Click to Remove Items</button>
-              <span  id = "itemsChoice" onclick = "clearItems()"></span>
+              <button class = "remove" onclick = "clearItems() ">Click to Remove Items</button>
+              <span id = "itemsChoice" onclick = "clearItems()"></span>
               <h4>Price per Bag:</h4>
               <h5 id = "pricePerBag">$0.00</h5>
               <input id = "BABSelector" type= "number" value = "1" name = "quantity" min ="1" max="200"></input>

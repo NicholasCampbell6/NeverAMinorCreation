@@ -7,13 +7,13 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
   <script type="text/javascript" src="./js/scripts.js"></script>
 </head>
-<body>
+<body onload ="showCart()">
   <div class="container">
     <p class = "cart" onclick ="showCart()">Your Cart</p>
     <div class = "cartDiv">
-      <h4>Selected Bags:</h4>
-      <button onclick = "clearCart()">Click to Clear your Cart</button>
+      <h3 style = "text-align: center; border-bottom: 1px solid black">Selected Bags:</h3>
       <span id = "cartBags"></span>
+      <button class = "remove" onclick = "clearCart()">Click to Clear your Cart</button>
     </div>
     <header>
       <a href = "./index.html"><img class = "logo" src = "./images/logo.png"></img></a>
